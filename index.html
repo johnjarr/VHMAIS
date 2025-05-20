@@ -137,10 +137,11 @@
         <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video> -->
+
+      <img src="static/images/1_teaser.png" alt="pipline"/>
       <h2 class="subtitle has-text-centered">
         <strong>虚拟人多智能体互动系统流程图</strong>
       </h2>
-      <img src="static/images/1_teaser.png" alt="pipline"/>
       <div class="content has-text-centered">
         <p>本系统主要包含三大模块：互动剧情生成模块、交互动作生成模块、运动增强模块。</p>
         <ol style="display: inline-block; text-align: left;">
@@ -189,11 +190,11 @@
           <strong>人与人交互动作生成网络结构图</strong>
         </h2>
         <div class="content" style="max-width: 800px; margin: 0 auto;">
-          <p>本文在人与人交互动作生成方法中提出了一个新的框架，包含三个部分：</p>
+          <p>本系统在人与人交互动作生成方法中提出了一个新的框架，包含三个部分：</p>
           <ol style="display: inline-block; text-align: left; padding-left: 1.5em;">
             <li><strong>交互场</strong>：基于SDF的空间地图来建模人-场景关系，避免碰撞。</li>
             <li><strong>文本细化</strong>：使用LLM将输入文本分解为多个层次的运动相关线索。</li>
-            <li><strong>扩散模型</strong>：通过对细化文本和场景几何体进行条件生成交互。</li>
+            <li><strong>扩散模型</strong>：将交互场和细化文本作为条件，以纯噪声和降噪时间步为输入，进行降噪，最终生成动作序列。</li>
           </ol>
         </div>
       </div>
@@ -274,7 +275,8 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <!-- <h2 class="title is-3">视频可视化结果</h2> -->
+      <h2 class="title has-text-centered">人与人交互模块视频可视化结果</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
@@ -282,6 +284,9 @@
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            First video description.
+          </h2>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
@@ -289,6 +294,9 @@
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            Second video description.
+          </h2>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
@@ -296,6 +304,9 @@
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            Third video description.
+          </h2>
         </div>
       </div>
     </div>
