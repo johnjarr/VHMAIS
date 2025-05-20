@@ -137,10 +137,10 @@
         <!-- <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video> -->
-      <img src="static/images/1_teaser.png" alt="pipline"/>
       <h2 class="subtitle has-text-centered">
         <strong>虚拟人多智能体互动系统流程图</strong>
       </h2>
+      <img src="static/images/1_teaser.png" alt="pipline"/>
       <div class="content has-text-centered">
         <p>本系统主要包含三大模块：互动剧情生成模块、交互动作生成模块、运动增强模块。</p>
         <ol style="display: inline-block; text-align: left;">
@@ -184,15 +184,22 @@
         type="video/mp4">
       </video> -->
       <img src="static/images/2_pipline.png" alt="pipline"/>
-      <h2 class="subtitle has-text-centered">
-          <strong>人与人交互动作生成网络结构图</strong><br>
-          本文在人与人交互动作生成方法中提出了一个新的框架，包含三个部分：<br>
-          (1) 交互场：基于SDF的空间地图来建模人-场景关系，避免碰撞。<br>
-          (2) 文本细化：使用LLM将输入文本分解为多个层次的运动相关线索。<br>
-          (3) 扩散模型：通过对细化文本和场景几何体进行条件生成交互。<br>
-        <!-- We propose HumanIMG, a human-human interaction generation framework with three components:
-(1) Interaction Field: Builds SDF-based spatial maps to model human-scene relationships and avoid collisions. (2) Text Refinement: Uses an LLM to break down input text into motion-relevant cues at multiple levels. (3) Diffusion Model: Generates interactions by conditioning on refined text and scene geometry.  where PE = positional encoding. -->
-      </h2>
+      <div class="has-text-centered">
+        <h2 class="subtitle">
+          <strong>人与人交互动作生成网络结构图</strong>
+        </h2>
+        <div class="content" style="max-width: 800px; margin: 0 auto;">
+          <p>本文在人与人交互动作生成方法中提出了一个新的框架，包含三个部分：</p>
+          <ol style="display: inline-block; text-align: left; padding-left: 1.5em;">
+            <li><strong>交互场</strong>：基于SDF的空间地图来建模人-场景关系，避免碰撞。</li>
+            <li><strong>文本细化</strong>：使用LLM将输入文本分解为多个层次的运动相关线索。</li>
+            <li><strong>扩散模型</strong>：通过对细化文本和场景几何体进行条件生成交互。</li>
+          </ol>
+        </div>
+      </div>
+      
+      <!-- 英文注释放在内容区块外部 -->
+      <!-- We propose HumanIMG, a human-human interaction generation framework... -->
     </div>
   </div>
 </section>
