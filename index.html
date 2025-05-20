@@ -139,16 +139,19 @@
       </video> -->
       <img src="static/images/1_teaser.png" alt="pipline"/>
       <h2 class="subtitle has-text-centered">
-        <p>
-        <strong>虚拟人多智能体互动系统流程图</strong><br>
-        本系统主要包含三大模块：互动剧情生成模块、交互动作生成模块、运动增强模块。<br>
-        (1) 互动剧情生成模块根据用户选择和输入，生成互动剧情并对剧情进行分析，将剧情分解成程序可识别的指令序列。<br>
-        (2) 交互动作生成模块遍历整个指令序列，根据不同类别的动作调用不同的动作生成模型生成对应动作。<br>
-        (3) 运动增强模块用于对生成动作进行优化，进行手势检索和碰撞修正。<br>
-        </p>
-        <!-- We propose HumanIMG, a human-human interaction generation framework with three components:
-(1) Interaction Field: Builds SDF-based spatial maps to model human-scene relationships and avoid collisions. (2) Text Refinement: Uses an LLM to break down input text into motion-relevant cues at multiple levels. (3) Diffusion Model: Generates interactions by conditioning on refined text and scene geometry.  where PE = positional encoding. -->
+        <strong>虚拟人多智能体互动系统流程图</strong>
       </h2>
+      <div class="content has-text-centered">
+        <p>本系统主要包含三大模块：互动剧情生成模块、交互动作生成模块、运动增强模块。</p>
+        <ol style="display: inline-block; text-align: left;">
+          <li><strong>互动剧情生成模块</strong>：根据用户选择和输入，生成互动剧情并对剧情进行分析，将剧情分解成程序可识别的指令序列。</li>
+          <li><strong>交互动作生成模块</strong>：遍历整个指令序列，根据不同类别的动作调用不同的动作生成模型生成对应动作。</li>
+          <li><strong>运动增强模块</strong>：用于对生成动作进行优化，进行手势检索和碰撞修正。</li>
+        </ol>
+      </div>
+      
+      <!-- 英文注释建议放在h2外部 -->
+      <!-- We propose HumanIMG... -->
     </div>
   </div>
 </section>
